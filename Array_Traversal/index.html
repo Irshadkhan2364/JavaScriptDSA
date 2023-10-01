@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Array_Traversal</title>
+    <script>
+        let arr =[20,30,10,4,8,23,59,90,28];
+
+        // for(let i=0;i<arr.length;i++){ //Arra traversal is completed through for loop
+        //     document.write(`Array ${[i]} is ${arr[i]} <br/>`);
+        // }
+
+        //Arrar Accessing Through index postion.
+        // document.write(`inArray on Position number = ${arr[2]}`);
+        function getElm(){
+            let element = document.getElementById('element').value;
+            if(element>=0 && element < arr.length && typeof parseInt(element) === "number"){
+                document.write(arr[element]);
+            }else{
+                document.write('pleace Enter correct input');
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="element">
+    <button onclick="getElm()">Get Element</button>
+    
+</body>
+</html>

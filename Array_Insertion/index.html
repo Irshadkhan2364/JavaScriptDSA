@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Array_Insertion</title>
+    <script>
+        // let arr=[20,10,80,40,30,3,5];
+        // let position=2;
+        // let newElm=900;
+        // console.log(arr)
+        // for(let i=arr.length-1;i>=0;i--){
+        //     if(i >= position){
+        //         arr[i+1]=arr[i];
+        //         if(i == position){
+        //             arr[i]=newElm;
+        //             console.log(arr);
+        //         }   
+        //     }
+        // }
+
+        //Dynamic array insertion
+        function insertElem(){
+          let arr=[20,10,80,40,30,3,5];
+          let position=document.getElementById('position').value;
+          let newElem=document.getElementById('newElm').value;
+          console.log(arr)
+          for(let i=arr.length-1; i>=0 ;i--){
+            if(i >= position && position >=0 && position <=arr.length-1){
+                arr[i+1]=arr[i];
+                if(i == position){
+                    arr[i]=newElem;
+                  
+                }    
+            }else{
+                console.log("pleace eneter correct input Neative number is not allowed")
+            }
+        }
+        console.log(arr)
+        }
+
+        // inserat throu javascript Metods
+        //    let arr=[20,10,80,40,30,3,5]; 
+        //    let insert =arr.splice(2,0,4000);
+        //    console.log(arr);
+
+    </script>
+</head>
+<body>
+    <input type="text" id="position" placeholder="enter the position">
+    <input type="text" id="newElm" placeholder="enter the newElemnt">
+    <button onclick="insertElem()">Insert Element</button>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursion</title>
+    <script>
+        // function test(item){
+        //     if(item == 0){
+        //         // console.log('jello'); 
+        //         return 1;
+        //     }
+        //     return item*test(item-1);
+        // }
+        // let x=5;
+        // console.log(test(x));
+
+    
+        // function printNmbe(item){
+        //     console.log(item)
+        //     if(item<20){ 
+        //       printNmbe(item+1)
+        //     }
+        //     // console.log(item)
+        // }
+        // let x=0;
+        // printNmbe(x);
+
+        //InDirect Recursion
+            function apple() {
+            
+                allFruite();
+            };
+
+            function allFruite(item){
+                if(item>=10){
+                  console.log(`all Fruite`);
+                  apple();
+                }
+                
+            }
+
+            allFruite(5);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

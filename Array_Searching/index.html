@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // let arr=[10,30,50,20,4,9,18];
+        // let elementSer=50;
+        // let index=undefined;
+        // for(let i=0;i<=arr.length-1;i++){
+        //     if(arr[i]==elementSer){
+        //         index=i;
+        //         break;
+        //     }
+        // }
+        // console.log(index);
+
+        Dynamic 
+        function searchMethod(){
+            let arr=[10,30,50,20,4,9,18];
+            let elementSer=document.getElementById('searchElem').value;
+            let index=undefined;
+            for(let i=0;i<=arr.length-1;i++){
+            if(arr[i]==elementSer){
+                index=i;
+                break;
+            }
+        }
+        console.log(index);
+        }
+
+        //javascriptMetds
+        // let arr=[10,30,50,20,4,9,18];
+        // let newelem=arr.indexOf(30);
+        //     console.log(newelem);
+
+    </script>
+</head>
+<body>
+    <input type="text"  id="searchElem" placeholder="Enter the number which you find">
+    <button onclick="searchMethod()">SearchElem</button>
+</body>
+</html>
